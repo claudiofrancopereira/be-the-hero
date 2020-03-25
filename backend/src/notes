@@ -1,0 +1,47 @@
+//antes de todas as requisicoes, express ir no corpo da requisicao e converter o json em um objeto javascript
+app.use(express.json());
+
+/**
+ * Rota/Recurso
+ */
+
+ /**
+ * Metodos HTTP
+ * 
+ * GET: Buscar/listar uma informacao do back-end
+ * POST: Criar uma informacao no back-end
+ * PUT: Alterar uma informacao no back-end
+ * DELETE: Deletar uma informacao no back-end
+ */
+
+ /**
+  * Tipos de parametros:
+  * 
+  * Query Params: parametros nomeados enviados na rota apos o '?' (Filtros, paginacao) 
+  * Route Params: parametros utilizados para identificar recursos
+  * Request Body: corpo da requisicao, utilizado para criar ou alterar recursos
+  */
+
+  /**
+   * SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+   * NoSQL: MongoDB, CouchDB, etc
+   * 
+   * SQLite
+   */
+
+   /**
+    * Driver: SELECT * FROM users
+    * Query Builder: table('users').select('*').where()
+    */
+
+app.post('/users/', (request, response) => {
+    //para acessar Query Params
+    //const params = request.query;
+
+    //para acessar Route Params
+    //const params = request.params;
+ 
+    //para acessar Request Body
+    const body = request.body;
+
+
