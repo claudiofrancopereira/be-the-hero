@@ -20,6 +20,7 @@ export default function Profile()
     useEffect(() => {
         api.get('profile', 
         {
+            
             headers: 
             {
                 Authorization: ongID,
